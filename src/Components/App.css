@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    background: #dde6ed;
+    padding: 20px;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    height: 94vh;
+}
+.logo{
+    text-align: center;
+    padding: 20px;
+    color:#27374d;
+    align-items:center ;
+    display: flex;
+    gap:20px;
+}
+.logo-icon{
+    font-size: 30px;
+}
+.menu-list{
+display:flex;
+flex-direction: column;
+gap:20px;
+}
+.menu-list .item{
+   display: flex;
+   align-items: center;
+   gap:20px;
+   font-size: 1.1rem;
+   text-decoration: none;
+   font-weight: 600;
+padding: 10px;
+border-radius: 10px;
+color:#27374d;
+transition: 0.3s ease-in-out;
+}
+.menu-list .item:hover{
+    background:#27374d;
+    color:#dde6ed
+}
+.dashboard{
+    display: flex;
+    gap: 20px;
+}
+.dashboard-content{
+    background:#fff ;
+    flex: 1;
+    border-radius: 20px;
+    padding:2rem ;
+    display: flex;
+    gap:1.5rem;
+    justify-content: space-between;
+}
+.content{
+    width: 100%;
+
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-header a{
+    text-decoration: none;
+    padding-left: 35rem;
+    font-weight: 500;
+   color:#27374d;
+}
+.content-header a:hover{
+   text-decoration: underline;
+}
+.header-title{
+    color:#526d82 ;
+
+}
+.header-activity{
+    display: flex;
+    align-items:center;
+    gap: 40px;
+    
+}
+.search-box{
+    background: #dde6ed;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: flex;
+}
+.search-box input ::placeholder{
+    color: #ffffff4e;
+}
+.search-box input{
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+.search-box .icon{
+    color:#969393;
+    font-size: 22px;
+    
+}
+
+/*for card*/
+.table-wrapper {
+  width: 100%;
+  /* overflow-x: auto;  */
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.table-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sales-container .btn-add{
+    margin-top: 20px;
+   margin-left: 40px;
+}
+.btn-add{
+    
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 500;
+    background-color:#60bd7e ;
+    
+}
+.table {
+  table-layout: auto;
+  border-collapse: collapse;
+  box-shadow: 0px 10px 10px #ccc;
+  border-radius: 10px;
+  width: 100%;
+ 
+}
+.table tbody {
+  overflow-y: auto;
+  max-height: 400px; 
+  display: block;
+  
+}
+.table-header{
+text-align: center;
+color:#27374d;
+margin-bottom: 10px;
+margin-top: 45px;
+}
+.table thead {
+  background-color: #ccc;
+  color: #222;
+  white-space: nowrap; 
+  display: block;
+}
+.table th,
+.table td {
+  padding: 10px; 
+  min-width: 150px;
+}
+.table tbody tr td {
+  text-align: center;
+  white-space: nowrap; 
+}
+.table td{
+    border-top:0.5px solid #ddd ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table tbody tr:hover{
+    background-color: #eee;
+}
+.actions{
+    display: flex;
+    justify-content: space-around;
+}
+.actions svg{
+    cursor: pointer;
+}
+.delete-btn{
+    color: #e10d05;
+}
+.edit-btn{
+    color: #22BF54;
+}
+.table tbody tr td{
+    text-align: center;
+}
+
+/*add sales*/
+.add-sales-wrapper{
+width: 100%;
+}
+.add-sales-wrapper h2{
+    text-align: center;
+color:#27374d;
+margin-bottom: 10px;
+margin-top: 15px;
+}
+.sales{
+  display: flex;
+  gap: 5px;
+
+}
+.sales label{
+font-size: 10px;
+font-weight: bold;
+}
+.sales input{
+    width: 10%;
+    height:10%
+}
+.sales button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    color:#fff;
+    font-weight: 500;
+    background-color:#60bd7e ;
+}
+.csv-btn{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: end;
+    margin-right: 25px;
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.csv{
+    text-decoration: none;
+    color: #e10d05;
+    font-size:1rem ;
+    font-weight: 600;
+    cursor: pointer;
+}
+.csv:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #00cc66 transparent #00cc66 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
